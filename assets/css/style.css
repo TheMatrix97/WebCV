@@ -573,6 +573,10 @@ SOCIAL ICON
 
 
 /* === About Section === */
+
+.biography  a[id="whatsico"]:hover{
+    color: #128c7e;
+}
 .short-info {
     margin-bottom: 40px;
 }
@@ -1838,3 +1842,4 @@ Icon for all respective meta
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
+/*mi edits sensuales*/

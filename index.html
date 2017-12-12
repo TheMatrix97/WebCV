@@ -61,6 +61,7 @@
           <li><a target="_blank" href="https://twitter.com/mcatrisse" id="twitter"><i class="fa fa-twitter"></i></a></li>
           <li><a target="_blank" href="https://www.youtube.com/channel/UC78vyE3PupjBdos4Iz9_2EA" id="youtube"><i class="fa fa-youtube-play"></i></a></li>
           <li><a target="_blank" href="https://github.com/TheMatrix97" id="github"><i class="fa fa-github"></i></a></li>
+
         </ul>
       </div> <!-- /.social-icons -->
 		</div>
@@ -113,8 +114,8 @@
               </div>
               <ul>
                 <li><strong>Nombre:</strong> Marc Catrisse Pérez</li>
-                <li><strong>Fecha de nacimiento:</strong> 20/03/1997</li>
-                <li><strong>Móvil:</strong> +34 660073229</li>
+                <li><strong>Fecha de nacimiento:</strong> 20/03/1997 <span id="libirth"></span></li>
+                <li><strong>Móvil:</strong> +34 660073229 <a id="whatsico" href="https://api.whatsapp.com/send?phone=34660073229"><i class="fa fa-whatsapp"></i></a></li>
                 <li><strong>Email:</strong> marc@catrisse.net</li>
                 <li><strong>Ciudad:</strong> Sant Cugat del Vallés</li>
               </ul>
@@ -860,5 +861,15 @@
   <script src="assets/js/jquery.fitvids.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="assets/js/scripts.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          var birthyear = 1997;
+          var currDate = new Date()
+          var old =  currDate.getFullYear() - birthyear
+          var text = $("#libirth").text()
+          $("#libirth").text(text + " (" + old + " años)")
+      })
+  </script>
 </body>
 </html>
