@@ -394,8 +394,8 @@ SOCIAL ICON
     margin: 0 7px;
     line-height: 40px;
     text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .social-icons a i::before {
@@ -408,19 +408,39 @@ SOCIAL ICON
     content: "";
     left: 0;
     top: 0;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 4px;
+
+
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
          -o-transform: rotate(45deg);
             transform: rotate(45deg);
+
     -webkit-transition: all 300ms;
        -moz-transition: all 300ms;
          -o-transition: all 300ms;
-            transition: all 300ms;            
+            transition: all 300ms;
+
+}
+
+.social-icons a[id=facebook] i:hover::after{
+    background: #3a5998;
+    border: 1px solid transparent;
+    z-index: 0;
+}
+.social-icons a[id=twitter] i:hover::after{
+    background: #00aced;
+    border: 1px solid transparent;
+    z-index: 0;
+}
+.social-icons a[id=youtube] i:hover::after{
+    background: #ff0000;
+    border: 1px solid transparent;
+    z-index: 0;
 }
 
 .social-icons a i:hover::after{
@@ -467,6 +487,12 @@ SOCIAL ICON
 
 .navbar-custom ul li a span{
     margin-left:5px;
+}
+.navbar-custom a[id="homeNav"]{
+    margin-left:0px;
+    padding-left: 0px;
+    text-align: left;
+
 }
 
 .navbar-custom .dropdown-menu {
@@ -601,7 +627,7 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
+    /*background: url(../../assets/images/photo-frame.png) bottom center no-repeat;*/
     background-size: contain;
 }
 
@@ -1625,7 +1651,7 @@ Icon for all respective meta
 
 #pre-status,
 .preload-placeholder {
-	background-image: url(../images/preloader.gif);
+	background-image: url(../images/preloader2.gif);
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200px;
