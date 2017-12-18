@@ -573,7 +573,12 @@ SOCIAL ICON
 
 
 /* === About Section === */
-
+.biography a{
+    color: #0f0f0f;
+}
+.biography  a[id="whatsico"]{
+    color: #25d366;
+}
 .biography  a[id="whatsico"]:hover{
     color: #128c7e;
 }
@@ -610,6 +615,10 @@ SOCIAL ICON
 .download-button a i {
     margin-right: 10px;
 }
+.download-button a[id="closealert"]{
+    color: black;
+}
+
 
 
 .biography{
