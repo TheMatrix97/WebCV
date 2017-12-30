@@ -174,7 +174,7 @@ h6 {
 /*common-btn*/
 .btn{
     border: 0;
-    border-bottom: 3px solid;
+   /* border-bottom: 3px solid;*/
     font-weight: 700;
     text-transform: uppercase;
     line-height: 28px;
@@ -597,6 +597,10 @@ SOCIAL ICON
 .short-info ul li {
     width: 50%;
     float: left;
+}
+.short-info p {
+	text-align:justify;
+	font-size: 150%;
 }
 
 .my-signature{
@@ -1027,6 +1031,11 @@ Resume Timeline
     margin-top: -6px;
     text-transform: capitalize;
 }
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+}
+
 
 
 
